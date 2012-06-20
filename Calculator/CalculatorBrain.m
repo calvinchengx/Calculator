@@ -16,6 +16,7 @@
 }
 
 - (void)performWaitingOperation
+// Actually executing the operation
 {
     if ([@"+" isEqual:waitingOperation]) {
         operand = waitingOperand + operand;
