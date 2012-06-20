@@ -43,7 +43,7 @@
 {
     NSString *digit = [[sender titleLabel] text];
     
-    // Check if a "." is already present in digit. If so, do not let another "." be added 
+    // Check if a "." is already present in display. If so, do not let another "." be added 
     NSString *previousResults = [display text];
     int times = [[previousResults componentsSeparatedByString:@"."] count] - 1;
     if ((times >= 1) && [digit isEqual:@"."]) {
