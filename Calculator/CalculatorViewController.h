@@ -9,10 +9,29 @@
 #import <UIKit/UIKit.h>
 #import "CalculatorBrain.h"
 
+// TODO: implement a state machine
+/*
+typedef enum {
+    KeyPressStateNumber,
+    KeyPressStateOperand,
+    KeyPressStateDecimalPoint
+} KeyPressState;
+*/
+
+/*
+typedef enum {
+    ScientificOperandIntegration,
+    ScientificOperandDifferential,
+} ScientificOperand;
+
+static NSArray *scientficOperands = @"∫";
+*/
+ 
 @interface CalculatorViewController : UIViewController {
     IBOutlet UILabel *display;
     CalculatorBrain *brain;
     BOOL userIsInTheMiddleOfTypingANumber;
+    BOOL operating;
 }
 
 - (IBAction) digitPressed:(NSString *)digit;
