@@ -35,6 +35,12 @@
 {
     if ([operation isEqual:@"sqrt"]) {
         operand = sqrt(operand);
+    } else if ([operation isEqual:@"sin"]) {
+        operand = sin(operand);
+    } else if ([operation isEqual:@"cos"]) {
+        operand = cos(operand);
+    } else if ([operation isEqual:@"tan"]) {
+        operand = tan(operand);
     } else {
         [self performWaitingOperation];
         waitingOperation = operation;

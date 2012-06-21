@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CalculatorBrain.h"
+#import <math.h>
 
 // TODO: implement a state machine
 /*
